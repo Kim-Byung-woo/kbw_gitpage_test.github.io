@@ -72,7 +72,7 @@ My name is ~ <br/>
 My name is ~ <br/>
 
 ### 3-2. Third - two
-![avatar]("/assets/images/avatar.png")
+![avatar](/assets/images/avatar.png)
 
 
 # 4. 네번째
