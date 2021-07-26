@@ -59,29 +59,29 @@ CONTINUE
 ```
 
 # 3. Third  
-sample code
-sample code
-sample code
-sample code
-sample code
+sample code <br/>
+sample code <br/>
+sample code <br/>
+sample code <br/>
+sample code <br/>
 
 ## 3-1. Third - one
-My name is ~
-My name is ~
-My name is ~
-My name is ~
+My name is ~ <br/>
+My name is ~ <br/>
+My name is ~ <br/>
+My name is ~ <br/>
 
 ### 3-2. Third - two
 ![alt](/assets/images/avatar.png)
 
 
 # 4. 네번째
+My name is ~ 
+Your name is ~ <br/>
 My name is ~
-Your name is ~
+Your name is ~ <br/>
 My name is ~
-Your name is ~
+Your name is ~ <br/>
 My name is ~
-Your name is ~
-My name is ~
-Your name is ~
+Your name is ~ <br/>
 
