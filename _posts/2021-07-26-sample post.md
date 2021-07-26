@@ -14,6 +14,10 @@ tags:
   - 데이터
   - 기초
   - 데이터 분석
+
+author_profile: true
+sidebar:
+  nav: "main"
 ---
 
 # 개요  
