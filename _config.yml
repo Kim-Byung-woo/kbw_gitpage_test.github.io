@@ -102,7 +102,7 @@ analytics:
 # Site Author
 author:
   name             : "Site Author name is kim byuno woo"
-  avatar           : "/assets/images/github page sample_1.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/avatar.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "This is Site Author bio: Data Scientist"
   location         : "Seoul, South Korea"
   email            :
