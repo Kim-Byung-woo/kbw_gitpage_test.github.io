@@ -77,6 +77,7 @@ My name is ~ <br/>
 
 ### 3-2. Third - two
 ![error](/assets/images/teaser.png) <br/>
+<img src="https://seoyoungh.github.io/assets/images/logo.png">
 
 # 4. 네번째
 My name is ~ 
