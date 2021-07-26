@@ -23,7 +23,7 @@ name                     : "Kim Byuong woo"
 description              : "Site Settings description is My description"
 url                      : "https://kim-byung-woo.github.io/kbw_gitpage_test.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "Kim-Byung-woo/kbw_gitpage_test.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "/assets/images/logo.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
@@ -83,7 +83,7 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 : "/assets/images/teaser.png"
+og_image                 : "https://kim-byung-woo.github.io/kbw_gitpage_test.github.io/assets/images/teaser.png"
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
