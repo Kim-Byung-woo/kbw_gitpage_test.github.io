@@ -61,6 +61,8 @@ sample code
 My name is ~
 
 ### 3-2. Third - two
+![jpg](/assets/images/avatar.png){: .align-center}{: width="80%" height="80%"} 
+
 
 # 4. 네번째
 My name is ~
