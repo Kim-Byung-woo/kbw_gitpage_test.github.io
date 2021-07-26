@@ -15,5 +15,5 @@ tags:
 
 
 ## AWS 데이터 파이프라인 예시
-![aws](/assets/aws.jpg)
+![aws](/assets/aws.JPG)
 
