@@ -77,7 +77,7 @@ My name is ~ <br/>
 
 ### 3-2. Third - two
 ![image](/assets/images/teaser.png) <br/>
-<img src="/assets/images/8.png" width="90%" height="90%" title="제목" alt="아무거나"/> 
+<img src="/assets/images/teaser.png" width="90%" height="90%" title="제목" alt="아무거나"/> 
 
 # 4. 네번째
 My name is ~ 
