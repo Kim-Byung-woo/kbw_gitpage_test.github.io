@@ -54,16 +54,19 @@ CONTINUE
 8
 9
 ```
+<br/>
 # 3. Third  
 sample code
 
+<br/>
 ## 3-1. Third - one
 My name is ~
 
+<br/>
 ### 3-2. Third - two
 ![jpg](/assets/images/avatar.png){: .align-center}{: width="80%" height="80%"} 
 
-
+<br/>
 # 4. 네번째
 My name is ~
 Your name is ~
