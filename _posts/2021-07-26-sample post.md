@@ -77,7 +77,7 @@ My name is ~ <br/>
 
 ### 3-2. Third - two
 ![image](/assets/images/teaser.png)
-
+![image2]({{ site.baseurl }}/images/teaser.png)
 
 # 4. 네번째
 My name is ~ 
