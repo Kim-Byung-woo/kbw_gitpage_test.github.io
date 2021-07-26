@@ -25,6 +25,9 @@ tags:
   
 <br/>
 # 1. First  
+- TEXT
+- IMAGE
+- VIDEO
 
 sample code
 ```python
@@ -57,17 +60,28 @@ CONTINUE
 
 # 3. Third  
 sample code
-
+sample code
+sample code
+sample code
+sample code
 
 ## 3-1. Third - one
 My name is ~
-
+My name is ~
+My name is ~
+My name is ~
 
 ### 3-2. Third - two
-![jpg](/assets/images/avatar.png){: .align-center}{: width="80%" height="80%"} 
+![alt](/assets/images/avatar.png)
 
 
 # 4. 네번째
-My name is ~ </br>
+My name is ~
+Your name is ~
+My name is ~
+Your name is ~
+My name is ~
+Your name is ~
+My name is ~
 Your name is ~
 
