@@ -12,11 +12,8 @@ tags:
   - database
 ---
 
-## 빅데이터 분석 기반의 예
-![bigdata_flow](/assets/images/bigdata_flow.JPG)
+
 
 ## AWS 데이터 파이프라인 예시
-![aws](/assets/images/aws.JPG)
+![aws](/assets/aws.jpg)
 
-## GCP 데이터 파이프라인 예시
-![gcp](/assets/images/gcp.JPG)
