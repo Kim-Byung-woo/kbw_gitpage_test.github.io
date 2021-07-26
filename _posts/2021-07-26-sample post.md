@@ -17,7 +17,7 @@ tags:
 
 author_profile: true
 sidebar:
-  nav: "main"
+  nav: "sidebar-contents"
 ---
 
 # 개요  
