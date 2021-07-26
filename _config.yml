@@ -1,3 +1,9 @@
+---
+author_profile: true
+sidebar:
+  nav: "sidebar-contents"
+---
+
 # Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your entire site, values
