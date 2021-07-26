@@ -76,7 +76,7 @@ My name is ~ <br/>
 My name is ~ <br/>
 
 ### 3-2. Third - two
-![test](/assets/images/teaser.png)
+![image](/assets/images/teaser.png)
 
 
 # 4. 네번째
