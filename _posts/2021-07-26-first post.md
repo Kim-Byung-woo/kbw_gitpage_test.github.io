@@ -1,10 +1,15 @@
-# Front Matter
 ---
-date: 2019-01-25
-title: "Jekyll 첫번째 글"
-categories: blog
-tags: jekyll
-# 목차
-toc: true  
-toc_sticky: true 
+title: "Page Not Found"
+excerpt: "Page not found. Your pixels are in another canvas."
+permalink: /404.html
+author_profile: false
 ---
+
+요청하신 페이지를 찾을 수 없습니다.
+
+<script>
+  var GOOG_FIXURL_LANG = 'en';
+  var GOOG_FIXURL_SITE = 'https://devinlife.com'
+</script>
+<script src="https://linkhelp.clients.google.com/tbproxy/lh/wm/fixurl.js">
+</script>
