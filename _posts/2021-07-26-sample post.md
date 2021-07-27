@@ -76,8 +76,8 @@ My name is ~ <br/>
 My name is ~ <br/>
 
 ### 3-2. Third - two
-![error](/assets/images/teaser.png) <br/>
-<img src="https://seoyoungh.github.io/assets/images/logo.png">
+<img src="https://kim-byung-woo.github.io/kbw_gitpage_test.github.io/assets/images/teaser.png" width="300" height="300"></center>
+<img src="https://seoyoungh.github.io/assets/images/logo.png"  width="100" height="100"></center>
 
 # 4. 네번째
 My name is ~ 
