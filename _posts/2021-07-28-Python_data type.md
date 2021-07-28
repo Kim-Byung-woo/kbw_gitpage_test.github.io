@@ -21,12 +21,12 @@ sidebar:
 
 # Pyhon Data Type
 ## str
-[link](https://kim-byung-woo.github.io/kimbyungwoo.github.io/assetshtml/python_str.html)<br/>
+[link to ipynb](https://kim-byung-woo.github.io/kimbyungwoo.github.io/assets/html/python_str.html)<br/>
 ## list
-[link](https://kim-byung-woo.github.io/kimbyungwoo.github.io/assetshtml/python_list.html)<br/>
+[link to ipynb](https://kim-byung-woo.github.io/kimbyungwoo.github.io/assets/html/python_list.html)<br/>
 ## set
-[link](https://kim-byung-woo.github.io/kimbyungwoo.github.io/assetshtml/python_set.html)<br/>
+[link to ipynb](https://kim-byung-woo.github.io/kimbyungwoo.github.io/assets/html/python_set.html)<br/>
 ## tuple
-[link](https://kim-byung-woo.github.io/kimbyungwoo.github.io/assets/html/python_tuple.html)<br/>
+[link to ipynb](https://kim-byung-woo.github.io/kimbyungwoo.github.io/assets/html/python_tuple.html)<br/>
 ## dictionary
-[link](https://kim-byung-woo.github.io/kimbyungwoo.github.io/assets/html/python_dictionary.html)<br/>
+[link to ipynb](https://kim-byung-woo.github.io/kimbyungwoo.github.io/assets/html/python_dictionary.html)<br/>
