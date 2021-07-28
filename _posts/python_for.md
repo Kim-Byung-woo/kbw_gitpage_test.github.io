@@ -1,3 +1,25 @@
+---
+title:  "[Python] For loop"
+excerpt: "Pthon function tutorial"
+toc: true
+toc_sticky: true
+header:
+  teaser: /assets/images/teaser.png
+
+categories:
+  - pythonic
+
+tags:
+  - python
+  - basic
+  - function
+  - loop
+
+author_profile: true
+sidebar:
+  nav: "sidebar-contents"
+---
+
 ## for Loop
 
 for 변수 in 리스트(또는 튜플, 문자열):
