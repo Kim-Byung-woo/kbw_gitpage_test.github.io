@@ -22,6 +22,12 @@ sidebar:
 # 디지털 영상의 기초 이해 
 ref: https://opencv-python.readthedocs.io/en/latest/index.html
 
+# Pixel level
+* Add
+* Inverse
+* Threshold
+
+
 ```python
 import os
 import cv2
@@ -97,7 +103,7 @@ plot_with_histogram([img_inv])
 
 
 ## Threshold
-+ opencv:
++ opencv funtion:
     - cv2.threshold(src, thresh, maxval, type)
 + Parameters:
     - src – input image로 single-channel 이미지.(grayscale 이미지)
@@ -132,18 +138,16 @@ plot_with_histogram([img_thres])
 <img src="https://kim-byung-woo.github.io/kimbyungwoo.github.io/assets/images/2021-07-28-Image processing_1/output_10_0.png"> 
     
 
-
 ## adaptiveThreshold
-작은 영역별로 thresholding
-- opencv:
-* cv2.adaptiveThreshold(src, maxValue, adaptiveMethod, thresholdType, blockSize, C)
-- Parameters:
-* src – grayscale image
-* maxValue – 임계값
-* adaptiveMethod – thresholding value를 결정하는 계산 방법
-* thresholdType – threshold type
-* blockSize – thresholding을 적용할 영역 사이즈
-* C – 평균이나 가중평균에서 차감할 값
++ opencv funtion:
+    - cv2.adaptiveThreshold(src, maxValue, adaptiveMethod, thresholdType, blockSize, C)
++ Parameters:
+    - src – grayscale image
+    - maxValue – 임계값
+    - adaptiveMethod – thresholding value를 결정하는 계산 방법
+    - thresholdType – threshold type
+    - blockSize – thresholding을 적용할 영역 사이즈
+    - C – 평균이나 가중평균에서 차감할 값
 
 
 ```python
@@ -172,12 +176,11 @@ plot_with_histogram([th4], title=['Otsu'])
 ```
 
 
-    
-![png](output_14_0.png)
-    
+<img src="https://kim-byung-woo.github.io/kimbyungwoo.github.io/assets/images/2021-07-28-Image processing_1/output_14_0.png">        
 
 
-## Transformation
+
+# Transformation
 * Flip (horizontal, vertical)
 * Resize
 * Translate
@@ -206,7 +209,7 @@ plt.imshow(img, 'gray')
     
 
 
-### Crop
+## Crop
 
 
 ```python
@@ -288,17 +291,15 @@ plt.show()
 
 <img src="https://kim-byung-woo.github.io/kimbyungwoo.github.io/assets/images/2021-07-28-Image processing_1/output_22_0.png">     
     
-
-
 ## resize
-### cv2.resize(img, dsize, fx, fy, interpolation)
-### Parameters:
-* img – Image
-* dsize – Manual Size. 가로, 세로 형태의 tuple(ex; (100,200))
-* fx – 가로 사이즈의 배수. 2배로 크게하려면 2. 반으로 줄이려면 0.5
-* fy – 세로 사이즈의 배수
-* interpolation – 보간법(default = cv2.INTER_LNIEAR)
-
++ opencv funtion:
+    - cv2.resize(img, dsize, fx, fy, interpolation)
++ Parameters:
+    - img – Image
+    - dsize – Manual Size. 가로, 세로 형태의 tuple(ex; (100,200))
+    - fx – 가로 사이즈의 배수. 2배로 크게하려면 2. 반으로 줄이려면 0.5
+    - fy – 세로 사이즈의 배수
+    - interpolation – 보간법(default = cv2.INTER_LNIEAR)
 
 ```python
 height, width = img.shape
@@ -322,14 +323,14 @@ plt.show()
 <img src="https://kim-byung-woo.github.io/kimbyungwoo.github.io/assets/images/2021-07-28-Image processing_1/output_24_0.png">     
     
 
++ opencv funtion:
+    - meshgrid(x1, x2..., copy = True, sparse = True, indexing = 'xy'): x축 값(1차원 배열)과 y축(1차원 배열) 값을 받아서 좌표 행렬을 반환
++ Parameters:
+    - x1.x2..: 그리드에 나타낼 1차원 벡터
+    - copy: False인 경우 메모리 절약을 위해 오리지널 배열로 반환
+    - sparse: True인 경우 메모리 절약을 위해 희소 그리드 반환
+    - indexing: 일반좌표-> 'xy', 행렬좌표-> 'ij'
 
-### meshgrid(x1, x2..., copy = True, sparse = True, indexing = 'xy'): x축 값(1차원 배열)과 y축(1차원 배열) 값을 받아서 좌표 행렬을 반환
-
-### Parameters:
-* x1.x2..: 그리드에 나타낼 1차원 벡터
-* copy: False인 경우 메모리 절약을 위해 오리지널 배열로 반환
-* sparse: True인 경우 메모리 절약을 위해 희소 그리드 반환
-* indexing: 일반좌표-> 'xy', 행렬좌표-> 'ij'
 
 
 ```python
@@ -355,14 +356,13 @@ plt.grid()
 <img src="https://kim-byung-woo.github.io/kimbyungwoo.github.io/assets/images/2021-07-28-Image processing_1/output_26_0.png">     
     
 
-
 ## Translation
-### cv2.warpAffine(src, M, dsize)
-### Parameters:
-* src – Image
-* M – 변환 행렬 - 변환행렬은 이동 변환을 위한 2X3의 이차원 행렬입니다. [[1,0,x축이동],[0,1,y축이동]] 형태의 float32 type의 numpy array입니다.
-* dsize (tuple) – output image size(ex; (width=columns, height=rows)
-
++ opencv funtion:
+    - cv2.warpAffine(src, M, dsize)
++ Parameters:
+    - src – Image
+    -  M – 변환 행렬 - 변환행렬은 이동 변환을 위한 2X3의 이차원 행렬입니다. [[1,0,x축이동],[0,1,y축이동]] 형태의 float32 type의 numpy array입니다.
+    - dsize (tuple) – output image size(ex; (width=columns, height=rows)
 
 ```python
 x = np.arange(512)
@@ -394,13 +394,14 @@ plt.show()
 <img src="https://kim-byung-woo.github.io/kimbyungwoo.github.io/assets/images/2021-07-28-Image processing_1/output_29_0.png">    
     
 
-
 ## Rotate
-### cv2.getRotationMatrix2D(center, angle, scale) → M
-### Parameters:
-* center – 이미지의 중심 좌표
-* angle – 회전 각도
-* scale – scale factor
++ opencv funtion:
+    - cv2.getRotationMatrix2D(center, angle, scale) → M
++ Parameters:
+    - center – 이미지의 중심 좌표
+    - angle – 회전 각도
+    - scale – scale factor
+ 
 
 
 ```python
@@ -425,7 +426,8 @@ plt.show()
     
 
 
-### shear(영상의 전단 변환): x,y 축 방향으로 영상이 밀리는 것 처럼 보이는 변환(https://gaussian37.github.io/vision-opencv_python_snippets)
+## shear
+shear(영상의 전단 변환): x,y 축 방향으로 영상이 밀리는 것 처럼 보이는 변환(https://gaussian37.github.io/vision-opencv_python_snippets)
 
 
 ```python
@@ -458,12 +460,14 @@ plt.show()
 * Blurring
 * Edge detection
 
-### Blurring: <br>Image Blurring은 low-pass filter를 이미지에 적용하여 얻을 수 있습니다. 고주파영역을 제거함으로써 노이즈를 제거하거나 경계선을 흐리게 할 수 있습니다.
+## Blurring
+Blurring: Image Blurring은 low-pass filter를 이미지에 적용하여 얻을 수 있습니다. 고주파영역을 제거함으로써 노이즈를 제거하거나 경계선을 흐리게 할 수 있습니다.
 
-### cv2.blur(src, ksize) - 모든 픽셀에 똑같은 가중치를 부여
-### Parameters:
-* src – Chennel수는 상관없으나, depth(Data Type)은 CV_8U, CV_16U, CV_16S, CV_32F or CV_64F.
-* ksize – kernel 사이즈(ex; (3,3))
++ opencv funtion:
+    - cv2.blur(src, ksize) - 모든 픽셀에 똑같은 가중치를 부여
++ Parameters:
+    - src – Chennel수는 상관없으나, depth(Data Type)은 CV_8U, CV_16U, CV_16S, CV_32F or CV_64F.
+    - ksize – kernel 사이즈(ex; (3,3))
 
 
 ```python
@@ -493,11 +497,11 @@ plt.title('blurring using mean filter')
 <img src="https://kim-byung-woo.github.io/kimbyungwoo.github.io/assets/images/2021-07-28-Image processing_1/output_37_1.png">   
     
 
-
-### cv2.medianBlur(src, ksize) - 중간값을 뽑아서 픽셀값으로 사용
-### Parameters:	
-* src – Chennel수는 상관없으나, depth(Data Type)은 CV_8U, CV_16U, CV_16S, CV_32F or CV_64F.
-* ksize – 1보다 큰 홀수
++ opencv funtion:
+    - cv2.medianBlur(src, ksize) - 중간값을 뽑아서 픽셀값으로 사용
++ Parameters:
+    - src – Chennel수는 상관없으나, depth(Data Type)은 CV_8U, CV_16U, CV_16S, CV_32F or CV_64F.
+    - ksize – 1보다 큰 홀수
 
 
 ```python
@@ -527,12 +531,13 @@ plt.title('blurring using median filter')
 
 <img src="https://kim-byung-woo.github.io/kimbyungwoo.github.io/assets/images/2021-07-28-Image processing_1/output_39_1.png">   
 
-
-### cv2.GaussianBlur(img, ksize, sigmaX) - 중심에 있는 픽셀에 높은 가중치를 부여
-### Parameters:	
-* img – Chennel수는 상관없으나, depth(Data Type)은 CV_8U, CV_16U, CV_16S, CV_32F or CV_64F.
-* ksize – (width, height) 형태의 kernel size. width와 height는 서로 다를 수 있지만 홀수로 지정해야 함.
-* sigmaX – Gaussian kernel standard deviation in X direction.
++ opencv funtion:
+    - cv2.GaussianBlur(img, ksize, sigmaX) - 중심에 있는 픽셀에 높은 가중치를 부여
++ Parameters:
+    - img – Chennel수는 상관없으나, depth(Data Type)은 CV_8U, CV_16U, CV_16S, CV_32F or CV_64F.
+    - ksize – (width, height) 형태의 kernel size. width와 height는 서로 다를 수 있지만 홀수로 지정해야 함.
+    - sigmaX – Gaussian kernel standard deviation in X direction.
+   
 
 
 ```python
@@ -564,21 +569,23 @@ plt.show()
     
 
 
-### Edge detection: 이미지 (x,y)에서의 벡터값(크기와 방향, 즉 밝기와 밝기의 변화하는 방향)을 구해서 해당 pixel이 edge에 얼마나 가까운지, 그리고 그 방향이 어디인지 쉽게 알수 있게 합니다.
-* Gradient: 스칼라장(공간)에서 최대의 증가율을 나타내는 벡터장(방향과 힘)
+## Edge detection: 
+Edge detection: 이미지 (x,y)에서의 벡터값(크기와 방향, 즉 밝기와 밝기의 변화하는 방향)을 구해서 해당 pixel이 edge에 얼마나 가까운지, 그리고 그 방향이 어디인지 쉽게 알수 있게 합니다.
 
-### Sobel & Scharr Filter:<br>Gaussian smoothing과 미분을 이용한 방법입니다. 노이즈가 있는 이미지에 적용하면 좋습니다. X축과 Y축을 미분하는 방법으로 경계값을 계산합니다.
+Gradient: 스칼라장(공간)에서 최대의 증가율을 나타내는 벡터장(방향과 힘)
+
+### Sobel & Scharr Filter:<br>
 
 <img src="https://kim-byung-woo.github.io/kimbyungwoo.github.io/assets/images/2021-07-28-Image processing_1/sobel_filter.JPG"> 
 
-
-### cv2.Sobel(src, ddepth, dx, dy, dst, ksize, scale, delta, borderType) → dst
-### Parameters:
-* src – input image
-* ddepth – output image의 depth, -1이면 input image와 동일.
-* dx – x축 미분 차수.
-* dy – y축 미분 차수.
-* ksize – kernel size(ksize x ksize) - 홀수 값을 사용하며, 최대 31까지 설정할 수 있습니다.
++ opencv funtion:
+    - cv2.Sobel(src, ddepth, dx, dy, dst, ksize, scale, delta, borderType) → dst Gaussian smoothing과 미분을 이용한 방법입니다. 노이즈가 있는 이미지에 적용하면 좋습니다. X축과 Y축을 미분하는 방법으로 경계값을 계산합니다.
++ Parameters:
+    - src – input image
+    - ddepth – output image의 depth, -1이면 input image와 동일.
+    - dx – x축 미분 차수.
+    - dy – y축 미분 차수.
+    - ksize – kernel size(ksize x ksize) - 홀수 값을 사용하며, 최대 31까지 설정할 수 있습니다.
 
 
 ```python
@@ -622,18 +629,14 @@ plt.title('sobel filter (x, y)')
 <img src="https://kim-byung-woo.github.io/kimbyungwoo.github.io/assets/images/2021-07-28-Image processing_1/output_44_1.png">     
     
 
-
-* Laplacian: 미지의 가로와 세로에 대한 Gradient를 2차 미분한 값입니다. blob(주위의 pixel과 확연한 picel차이를 나타내는 덩어리)검출에 많이 사용됩니다.
-* Canny: 여러 단계의 Algorithm을 통해서 경계를 찾아 냅니다.
-
-### Laplacian:<br>이미지의 가로와 세로에 대한 Gradient를 2차 미분한 값입니다. blob(주위의 pixel과 확연한 picel차이를 나타내는 덩어리)검출에 많이 사용됩니다.
-
+Laplacian:<br>
 <img src="https://kim-byung-woo.github.io/kimbyungwoo.github.io/assets/images/2021-07-28-Image processing_1/Laplacian_filter.JPG"> 
 
-### cv2.laplacian(src, ddepth, ksize, scale, delta, borderType) → dst
-### Parameters:
-* src – input image
-* ddepth – output image의 depth, -1이면 input image와 동일.
++ opencv funtion:
+    - cv2.laplacian(src, ddepth, ksize, scale, delta, borderType) → dst 이미지의 가로와 세로에 대한 Gradient를 2차 미분한 값입니다. blob(주위의 pixel과 확연한 picel차이를 나타내는 덩어리)검출에 많이 사용됩니다.
++ Parameters:
+    - src – input image
+    - ddepth – output image의 depth, -1이면 input image와 동일.
 
 
 ```python
@@ -662,17 +665,18 @@ plt.title('laplacial filter')
     
 
 
-### Canny: 여러 단계의 Algorithm을 통해서 경계를 찾아 냅니다.
+## Canny: 여러 단계의 Algorithm을 통해서 경계를 찾아 냅니다.
 1. 가우시안 필터를 이용하여 노이즈 제거
 2. 소벨 필터를 이용화여 Gradient의 방향과 강도 확인
 3. Edge가 아닌 픽셀 제거
 4. 추출된 Edge 판별
 
-### cv2.Canny(image, threshold1, threshold2[, edges[, apertureSize[, L2gradient]]]) → edge
-### Parameters:
-* image – 8-bit input image
-* threshold1 – Hysteresis Thredsholding 작업에서의 min 값
-* threshold2 – Hysteresis Thredsholding 작업에서의 max 값
++ opencv funtion:
+    - cv2.Canny(image, threshold1, threshold2[, edges[, apertureSize[, L2gradient]]]) → edge
++ Parameters:
+    - image – 8-bit input image
+    - threshold1 – Hysteresis Thredsholding 작업에서의 min 값
+    - threshold2 – Hysteresis Thredsholding 작업에서의 max 값
 
 
 ```python
@@ -696,22 +700,24 @@ plt.show()
     
 
 
-### Labeling: 이진화된 이미지에서 연결되어 있는 픽셀들을 Grouping
+## Labeling: 
+이진화된 이미지에서 연결되어 있는 픽셀들을 Grouping
 
-### cv2.connectedComponentsWithStats(image, labels=None, stats=None, centroids=None, connectivity=None, ltype=None) -> retval, labels, stats, centroids
-
-### Parameters:
-* image: 8비트 1채널 영상
-* labels: 레이블 맵 행렬. 입력 영상과 같은 크기. numpy.ndarray.
-* stats: 각 객체의 바운딩 박스, 픽셀 개수 정보를 담은 행렬. numpy.ndarray. shape=(N, 5), dtype=numpy.int32.
-* centroids: 각 객체의 무게 중심 위치 정보를 담은 행렬 numpy.ndarray. shape=(N, 2), dtype=numpy.float64.
-* ltype: labels 행렬 타입. cv2.CV_32S 또는 cv2.CV_16S. 기본값은 cv2.CV_32S
-
-### Return:
-* retval: 객체 수 + 1 (배경 포함)
-* labels : 객체에 번호가 지정된 레이블 맵
-* stats : N행 5열, N은 객체 수 + 1이며 각각의 행은 번호가 지정된 객체를 의미합니다. x, y, width, height, area 순으로 정보가 담겨 있습니다. x,y 는 좌측 상단 좌표를 의미
-* centroids : N행 2열, 2열에는 x,y 무게 중심 좌표가 입력되어 있습니다. 무게 중심 좌표는 픽셀의 x 좌표를 다 더해서 갯수로 나눈 값입니다. y좌표도 동일합니다.
++ opencv funtion:
+    - cv2.connectedComponentsWithStats(image, labels=None, stats=None, centroids=None, connectivity=None, ltype=None) -> retval, labels, stats, centroids
+    
++ Parameters:
+    - image: 8비트 1채널 영상
+    - labels: 레이블 맵 행렬. 입력 영상과 같은 크기. numpy.ndarray.
+    - stats: 각 객체의 바운딩 박스, 픽셀 개수 정보를 담은 행렬. numpy.ndarray. shape=(N, 5), dtype=numpy.int32.
+    - centroids: 각 객체의 무게 중심 위치 정보를 담은 행렬 numpy.ndarray. shape=(N, 2), dtype=numpy.float64.
+    - ltype: labels 행렬 타입. cv2.CV_32S 또는 cv2.CV_16S. 기본값은 cv2.CV_32S
+    
++ Return:
+    - retval: 객체 수 + 1 (배경 포함)
+    - labels : 객체에 번호가 지정된 레이블 맵
+    - stats : N행 5열, N은 객체 수 + 1이며 각각의 행은 번호가 지정된 객체를 의미합니다. x, y, width, height, area 순으로 정보가 담겨 있습니다. x,y 는 좌측 상단 좌표를 의미
+    - centroids : N행 2열, 2열에는 x,y 무게 중심 좌표가 입력되어 있습니다. 무게 중심 좌표는 픽셀의 x 좌표를 다 더해서 갯수로 나눈 값입니다. y좌표도 동일합니다.
 
 
 ```python
