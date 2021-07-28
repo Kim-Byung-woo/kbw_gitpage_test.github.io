@@ -166,7 +166,8 @@ plot_with_histogram([th2, th3], title=['Mean', 'Gaussian'])
     
 
 
-## Otsu: threshold를 자동으로 계산
+## Otsu
+Otsu: hreshold를 자동으로 계산
 함수의 flag에 추가로 cv2.THRESH_STSU 를 적용
 
 
@@ -456,7 +457,7 @@ plt.show()
     
 
 
-## Filter
+# Filter
 * Blurring
 * Edge detection
 
@@ -574,7 +575,7 @@ Edge detection: 이미지 (x,y)에서의 벡터값(크기와 방향, 즉 밝기�
 
 Gradient: 스칼라장(공간)에서 최대의 증가율을 나타내는 벡터장(방향과 힘)
 
-### Sobel & Scharr Filter:<br>
+### Sobel & Scharr Filter<br>
 
 <img src="https://kim-byung-woo.github.io/kimbyungwoo.github.io/assets/images/2021-07-28-Image processing_1/sobel_filter.JPG"> 
 
@@ -629,7 +630,7 @@ plt.title('sobel filter (x, y)')
 <img src="https://kim-byung-woo.github.io/kimbyungwoo.github.io/assets/images/2021-07-28-Image processing_1/output_44_1.png">     
     
 
-Laplacian:<br>
+### Laplacian:<br>
 <img src="https://kim-byung-woo.github.io/kimbyungwoo.github.io/assets/images/2021-07-28-Image processing_1/Laplacian_filter.JPG"> 
 
 + opencv funtion:
@@ -665,7 +666,8 @@ plt.title('laplacial filter')
     
 
 
-## Canny: 여러 단계의 Algorithm을 통해서 경계를 찾아 냅니다.
+### Canny
+Canny: 여러 단계의 Algorithm을 통해서 경계를 찾아 냅니다.
 1. 가우시안 필터를 이용하여 노이즈 제거
 2. 소벨 필터를 이용화여 Gradient의 방향과 강도 확인
 3. Edge가 아닌 픽셀 제거
@@ -700,8 +702,8 @@ plt.show()
     
 
 
-## Labeling: 
-이진화된 이미지에서 연결되어 있는 픽셀들을 Grouping
+# Labeling 
+Labeling: 이진화된 이미지에서 연결되어 있는 픽셀들을 Grouping
 
 + opencv funtion:
     - cv2.connectedComponentsWithStats(image, labels=None, stats=None, centroids=None, connectivity=None, ltype=None) -> retval, labels, stats, centroids
