@@ -20,7 +20,7 @@ sidebar:
   nav: "sidebar-contents"
 ---
 
-## for Loop
+# for Loop
 
 for 변수 in 리스트(또는 튜플, 문자열):
 <br/>
@@ -40,7 +40,7 @@ for idx in test_list:
     three
     
 
-### continue 활용
+# continue
 for문 안의 문장을 수행하는 도중에 continue문을 만나면 for문의 처음으로 돌아가게 된다.
 
 
@@ -54,7 +54,7 @@ for mark in marks:
     print("%d번 학생 축하합니다. 합격입니다. " % number)
 ```
 
-### range 활용
+# range
 
 
 ```python
@@ -72,7 +72,7 @@ for number in range(len(marks)): # range(len(marks)) = range(5)
     5번 학생 축하합니다. 합격입니다. 
     
 
-### enumerate 활용
+# enumerate
 enumerate는 순서가 있는 자료형(리스트, 튜플, 문자열)을 입력으로 받아 인덱스 값을 포함하는 enumerate 객체를 돌려준다.
 
 
@@ -109,7 +109,8 @@ else:
     21는 소수가 아닙니다.
     
 
-### List Comprehension [출력표현식 for 요소 in 입력 Sequence]
+# List Comprehension
++ format: [출력표현식 for 요소 in 입력 Sequence]
 이미 생성된 리스트를 사용해서 새로운 리스트를 생성할때 사용합니다.
 
 
@@ -122,7 +123,8 @@ print(result)
     [3, 9, 15, 21, 27]
     
 
-### if 추가 [출력표현식 if 조건식 else 출력표현식 for 요소 in 입력 Sequence]
+## List Comprehension if
++ format: [출력표현식 if 조건식 else 출력표현식 for 요소 in 입력 Sequence]
 
 
 ```python
@@ -134,7 +136,8 @@ print(result)
     [5, 12, 20, 28, 36]
     
 
-###  else가 없을 때는 if를 뒤에 써야 한다. [출력표현식 for 요소 in 입력 Sequence if 조건식]
+## List Comprehension if non else
++ format: [출력표현식 if 조건식 else 출력표현식 for 요소 in 입력 Sequence] else가 없을 때는 if를 뒤에 써야 한다.
 
 
 ```python
@@ -146,7 +149,8 @@ print(result)
     [6, 18, 30]
     
 
-### dictionary Comprehension 출력 표현식에 ':'를  추가합니다.
+# dictionary Comprehension 
++ format: 출력 표현식에 ':'를  추가합니다.
 
 
 ```python
