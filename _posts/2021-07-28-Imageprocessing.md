@@ -20,15 +20,9 @@ sidebar:
 ---
 
 # 디지털 영상의 기초 이해 
-### ref: https://opencv-python.readthedocs.io/en/latest/index.html
+ref: https://opencv-python.readthedocs.io/en/latest/index.html
 *   Pixel level
 *   Transformation
-
-## Pixel level
-* Add
-* Inverse
-* Threshold
-
 
 ```python
 import os
@@ -68,8 +62,6 @@ img = cv2.imread('../data/coin.png', cv2.IMREAD_GRAYSCALE) # cv2.IMREAD_GRAYSCAL
 print(img.dtype)
 plot_with_histogram([img])
 ```
-
-    uint8
     
 
 
@@ -107,8 +99,9 @@ plot_with_histogram([img_inv])
 
 
 ## Threshold
-### cv2.threshold(src, thresh, maxval, type) 
-### Parameters:
+- opencv:
+* cv2.threshold(src, thresh, maxval, type) 
+- Parameters:
 * src – input image로 single-channel 이미지.(grayscale 이미지)
 * thresh – 임계값
 * maxval – 임계값을 넘었을 때 적용할 value
@@ -142,9 +135,11 @@ plot_with_histogram([img_thres])
     
 
 
-## adaptiveThreshold: 작은 영역별로 thresholding
-### cv2.adaptiveThreshold(src, maxValue, adaptiveMethod, thresholdType, blockSize, C)
-### Parameters:
+## adaptiveThreshold
+작은 영역별로 thresholding
+- opencv:
+* cv2.adaptiveThreshold(src, maxValue, adaptiveMethod, thresholdType, blockSize, C)
+- Parameters:
 * src – grayscale image
 * maxValue – 임계값
 * adaptiveMethod – thresholding value를 결정하는 계산 방법
