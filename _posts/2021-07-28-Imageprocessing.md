@@ -97,6 +97,10 @@ plot_with_histogram([img_inv])
 
 
 ## Threshold
++ 순서없음
+    - 홍길동
+      * 중대장
+        + 프로실망러
 1. opencv:
   - cv2.threshold(src, thresh, maxval, type) 
 2. Parameters:
