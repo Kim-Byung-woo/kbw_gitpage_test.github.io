@@ -98,12 +98,12 @@ plot_with_histogram([img_inv])
 
 ## Threshold
 1. opencv:
-- cv2.threshold(src, thresh, maxval, type) 
+  - cv2.threshold(src, thresh, maxval, type) 
 2. Parameters:
-- src – input image로 single-channel 이미지.(grayscale 이미지)
-- thresh – 임계값
-- maxval – 임계값을 넘었을 때 적용할 value
-- type – thresholding type
+  - src – input image로 single-channel 이미지.(grayscale 이미지)
+  - thresh – 임계값
+  - maxval – 임계값을 넘었을 때 적용할 value
+  - type – thresholding type
 
 
 ```python
