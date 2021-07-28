@@ -29,4 +29,4 @@ sidebar:
 ## tuple
 [link](html/python_tuple.html)<br/>
 ## dictionary
-[link](html/python_dictionary.html)<br/>
+[link](https://kim-byung-woo.github.io/python_folio.github.io/html/python_dictionary.html)<br/>
