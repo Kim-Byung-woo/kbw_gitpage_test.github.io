@@ -21,12 +21,12 @@ sidebar:
 
 # Pyhon Data Type
 ## str
-[link.](../_data/python_str.html)<br/>
+[link](html/python_str.html)<br/>
 ## list
-[link.](../_data/html/python_list.html)<br/>
+[link](html/python_list.html)<br/>
 ## set
-[link.](../_data/html/python_set.html)<br/>
+[link](html/python_set.html)<br/>
 ## tuple
-[link.](../_data/html/python_tuple.html)<br/>
+[link](python_tuple.html)<br/>
 ## dictionary
-[link.](../_data/html/python_dictionary.html)<br/>
+[link](python_dictionary.html)<br/>
