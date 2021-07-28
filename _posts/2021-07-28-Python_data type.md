@@ -27,6 +27,6 @@ sidebar:
 ## set
 [link](html/python_set.html)<br/>
 ## tuple
-[link](python_tuple.html)<br/>
+[link](html/python_tuple.html)<br/>
 ## dictionary
-[link](python_dictionary.html)<br/>
+[link](html/python_dictionary.html)<br/>
