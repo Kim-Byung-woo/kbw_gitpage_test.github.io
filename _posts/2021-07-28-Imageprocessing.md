@@ -21,8 +21,6 @@ sidebar:
 
 # 디지털 영상의 기초 이해 
 ref: https://opencv-python.readthedocs.io/en/latest/index.html
-*   Pixel level
-*   Transformation
 
 ```python
 import os
@@ -99,13 +97,13 @@ plot_with_histogram([img_inv])
 
 
 ## Threshold
-- opencv:
-* cv2.threshold(src, thresh, maxval, type) 
-- Parameters:
-* src – input image로 single-channel 이미지.(grayscale 이미지)
-* thresh – 임계값
-* maxval – 임계값을 넘었을 때 적용할 value
-* type – thresholding type
+1. opencv:
+- cv2.threshold(src, thresh, maxval, type) 
+2. Parameters:
+- src – input image로 single-channel 이미지.(grayscale 이미지)
+- thresh – 임계값
+- maxval – 임계값을 넘었을 때 적용할 value
+- type – thresholding type
 
 
 ```python
