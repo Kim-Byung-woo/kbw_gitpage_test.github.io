@@ -21,12 +21,12 @@ sidebar:
 
 # Pyhon Data Type
 ## str
-[link.](kimbyungwoo.github.io/_data/python_str.html)<br/>
+[link.](../_data/python_str.html)<br/>
 ## list
-[link.](kimbyungwoo.github.io/_data/html/python_list.html)<br/>
+[link.](../_data/html/python_list.html)<br/>
 ## set
-[link.](kimbyungwoo.github.io/_data/html/python_set.html)<br/>
+[link.](../_data/html/python_set.html)<br/>
 ## tuple
-[link.](kimbyungwoo.github.io/_data/html/python_tuple.html)<br/>
+[link.](../_data/html/python_tuple.html)<br/>
 ## dictionary
-[link.](kimbyungwoo.github.io/_data/html/python_dictionary.html)<br/>
+[link.](../_data/html/python_dictionary.html)<br/>
